@@ -3,8 +3,17 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il piú grande tra due numeri interi.
 */
+let num1 = 1;
+let num2 = 2;
+if (num1>num2) {
+ console.log("Il numero piú grande é: " + num1);
+} else {
+ console.log("Il numero piú grande é: " + num2);
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+(num1>num2) ? console.log("Il numero piú grande é: " + num1) : console.log("Il numero piú grande é: " + num2);
+
+console.log(Math.max(num1, num2));
 
 /*
 ESERCIZIO 2
