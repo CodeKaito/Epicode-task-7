@@ -71,8 +71,13 @@ for(i=0; i<=10; i++) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let num1 = 1;
-let num2 = 2;
+let num1 = 4;
+let num2 = 4;
+if ((num1 === 8) || (num2 === 8)) {
+ console.log("Sicuramente, uno dei valori é 8!");
+} else if (((num1+num2) === 8) || ((num1-num2) === 8) || ((num2-num1) === 8)) {
+ console.log("L'addizione o la sottrazione fra le due variabili é uguale a 8");
+}
 
 
 /* ESERCIZIO EXTRA 2
