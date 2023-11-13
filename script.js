@@ -34,7 +34,7 @@ if ( num < 5 ) {
  console.log("Medium");
 } else if ( num < 20 ) {
  console.log("Large");
-} else if ( num >= 10 ) {
+} else if ( num >= 20 ) {
  console.log("Huge");
 }
 
