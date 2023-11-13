@@ -26,7 +26,17 @@ ESERCIZIO 2
   num >= 20 - mostra in console "Huge"
 */
 
-
+if ( num < 5 ) {
+ console.log("Tiny");
+} else if ( num < 10 ) {
+ console.log("Small");
+} else if ( num < 15 ) {
+ console.log("Medium");
+} else if ( num < 20 ) {
+ console.log("Large");
+} else if ( num >= 10 ) {
+ console.log("Huge");
+}
 
 //ESERCIZI SUI CICLI: 
 
@@ -72,14 +82,17 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 let carrello = 25;
-let promozione = (carrello > 50) ? 'la spedizione é gratuita' : 'la spedizione ha un costo fisso pari a 10';
+let totale = (carrello > 50) ? 0 : carrello+=10;
 
 /* ESERCIZIO EXTRA 3
   Oggi é il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
+  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, 
+  se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let carrello = 25;
+let sconto = (carrello/20) * 100;
+let totale = (sconto > 50) ? 0 : sconto+=10;
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
