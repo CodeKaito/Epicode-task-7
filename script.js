@@ -1,7 +1,7 @@
 //ESERCIZI SUGLI IF: 
 
 /* ESERCIZIO 1
- Scrivi un algoritmo per trovare il piÃ¹ grande tra due numeri interi.
+ Scrivi un algoritmo per trovare il piú grande tra due numeri interi.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
