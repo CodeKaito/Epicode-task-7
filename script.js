@@ -87,7 +87,8 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 let carrello = 25;
-let totale = (carrello > 50) ? 0 : carrello+=10;
+let totalShoppingCart = 0;
+totalShoppingCart = (shoppingCart > 50) ? shoppingCart : totalShoppingCart = shoppingCart + 10;
 
 /* ESERCIZIO EXTRA 3
   Oggi é il Black Friday e viene applicato il 20% su ogni prodotto.
