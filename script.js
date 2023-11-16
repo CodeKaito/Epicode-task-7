@@ -123,3 +123,90 @@ for(i=0; i<=100; i++) {
     console.log(i + " Buzz");
     }
 }
+
+// Esercizio 1: condizioni con ausilio di operatori logici
+// Maggiore e minore
+// Scrivi un programma che dati quattro numeri, restituisca in output il maggiore e il minore. 
+
+// Esempio:
+// Input: a = 3, b = -1, c = 4, d = -2
+// Output: maggiore = 4, minore = 2
+
+let a = 3;
+let b = -1;
+let c = 4;
+let d = -2;
+
+let maggiore = 0;
+let minore = 0;
+
+// Trova il maggiore
+if ((a > b && a > c && a > d) || (b > a && b > c && b > d) || (c > a && c > b && c > d)) {
+    maggiore = (a > b && a > c && a > d) ? a : ((b > a && b > c && b > d) ? b : c);
+} else {
+    maggiore = d;
+}
+
+// Trova il minore
+if ((a < b && a < c && a < d) || (b < a && b < c && b < d) || (c < a && c < b && c < d)) {
+    minore = (a < b && a < c && a < d) ? a : ((b < a && b < c && b < d) ? b : c);
+} else {
+    minore = d;
+}
+
+console.log("maggiore = " + maggiore + ", minore = " + minore);
+
+
+// Esercizio 2: stringhe e numeri
+// Quanti anni ha?
+// Scrivi un programma che dato l’anno corrente e un anno di nascita determini:
+
+// l’età della persona
+// quanti anni sono necessari per raggiungere i 100
+// Esempio:
+// Input: anno corrente = 2021, anno di nascita = 1996
+// Output: età = 25, anni mancanti = 75
+
+let annoCorrente = 2023;
+let annoDiNascita = 1997;
+console.log("anno corrente = " + annoCorrente + ", anno di nascita = " + annoDiNascita);
+let etá = annoCorrente-annoDiNascita;
+let anniMancanti = 100-etá;
+console.log("etá =" + etá + ", anni mancanti = " + 75);
+
+// Esercizio 3: Ciclo for
+// Progetta un algoritmo in Javascript che stampi tutte le coppie di numeri naturali la cui somma è un numero intero a scelta.
+
+// Esempio
+// Input: numero 7
+// Output: 
+// 0-7
+// 1-6
+// 2-5
+// 3-4
+// 4-3
+// 5-2
+// 6-1
+// 7-0
+
+let input = 10;
+for (let i = 0, k = input; i < input+1; i++, k--) {
+    console.log(i + " - " + k);
+}
+
+// Esercizio 4: metodo e proprietà
+// Il conta cifre
+// Scrivi un programma che dato un numero conti da quante cifre è formato.
+
+// Esempio
+Input: numero: 245
+Output: numero cifre: 3
+
+function contaCifre(numero) {
+    let inputStringify = numero.toString();
+    let res = inputStringify.length;
+    console.log(res);
+    return res;
+}
+
+// contaCifre(245);
